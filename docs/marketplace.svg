@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="520" viewBox="0 0 1040 520">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+    <style>
+      .c{fill:#fff;stroke:#888;stroke-width:1.2}
+      .s{fill:#f7f7f7;stroke:#999;stroke-width:1.2}
+      .b{fill:#ececec;stroke:#666;stroke-width:1.2}
+      .t{font:13px Helvetica,Arial,sans-serif;fill:#222;text-anchor:middle}
+      .h{font-weight:bold}
+      .i{font-style:italic}
+      .m{font-family:Menlo,Consolas,monospace;font-size:11px}
+      .l{font:11px Helvetica,Arial,sans-serif;fill:#333;text-anchor:middle;stroke:#fff;stroke-width:4;paint-order:stroke}
+      .ar{fill:none;stroke:#555;stroke-width:1.2;marker-end:url(#a)}
+      .d{stroke-dasharray:5 4}
+    </style>
+  </defs>
+  <rect width="1040" height="520" fill="#fff"/>
+
+  <!-- Users -->
+  <rect class="c" x="20" y="70" width="180" height="240"/>
+  <text class="t" x="110" y="90">Users</text>
+  <rect class="b" x="40" y="100" width="140" height="46"/>
+  <text class="t" x="110" y="128">Platform admin</text>
+  <rect class="b" x="40" y="170" width="140" height="46"/>
+  <text class="t" x="110" y="198">Producer team</text>
+  <rect class="b" x="40" y="240" width="140" height="46"/>
+  <text class="t" x="110" y="268">Consumer team</text>
+
+  <!-- Operator -->
+  <rect class="b" x="325" y="95" width="180" height="56"/>
+  <text class="t h" x="415" y="119">Marketplace operator</text>
+  <text class="t i" x="415" y="136">provisions and grants</text>
+
+  <!-- Virtual workspace -->
+  <rect class="c" x="290" y="225" width="250" height="150"/>
+  <text class="t" x="415" y="245">Marketplace virtual workspace</text>
+  <text class="t m" x="415" y="261">/services/marketplace</text>
+  <rect class="b" x="310" y="270" width="210" height="90"/>
+  <text class="t h" x="415" y="296">catalog of offerings</text>
+  <text class="t i" x="415" y="314">read-only</text>
+  <text class="t i" x="415" y="331">bind coordinates + claims</text>
+
+  <!-- kcp workspaces -->
+  <rect class="c" x="640" y="40" width="380" height="460"/>
+  <text class="t" x="830" y="60">kcp workspaces</text>
+  <rect class="b" x="665" y="80" width="330" height="60"/>
+  <text class="t h" x="830" y="105">root:marketplace:catalog</text>
+  <text class="t i" x="830" y="123">Producer records</text>
+
+  <rect class="s" x="665" y="155" width="330" height="145"/>
+  <text class="t h" x="830" y="174">root:marketplace:producers:acme</text>
+  <rect class="b" x="685" y="185" width="290" height="100"/>
+  <text class="t h" x="830" y="214">APIExport things.acme.example</text>
+  <text class="t i" x="830" y="234">annotated publish: "true"</text>
+  <text class="t i" x="830" y="254">bind grant from the operator</text>
+
+  <rect class="s" x="665" y="320" width="330" height="160"/>
+  <text class="t h" x="830" y="340">a consumer's project workspace</text>
+  <text class="t i" x="830" y="356">any workspace works</text>
+  <rect class="b" x="685" y="375" width="290" height="90"/>
+  <text class="t h" x="830" y="410">APIBinding things</text>
+  <text class="t i" x="830" y="430">claims accepted by the consumer</text>
+
+  <!-- Arrows -->
+  <path class="ar" d="M180 123 H240 V24 H830 V80"/>
+  <text class="l" x="535" y="18">register producer</text>
+
+  <path class="ar" d="M505 115 H665"/>
+  <text class="l" x="585" y="108">watches Producers</text>
+
+  <path class="ar" d="M505 140 H620 V170 H665"/>
+  <text class="l" x="560" y="158">creates it, grants bind</text>
+
+  <path class="ar" d="M180 200 H685"/>
+  <text class="l" x="590" y="193">publish an APIExport</text>
+
+  <path class="ar" d="M180 275 H310"/>
+  <text class="l" x="245" y="268">browse catalog</text>
+
+  <path class="ar" d="M110 286 V420 H685"/>
+  <text class="l" x="400" y="413">create an APIBinding</text>
+
+  <path class="ar d" d="M945 375 V285"/>
+  <text class="l" x="952" y="314" style="text-anchor:start">binds to</text>
+</svg>

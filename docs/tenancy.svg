@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="520" viewBox="0 0 1040 520">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+    <style>
+      .c{fill:#fff;stroke:#888;stroke-width:1.2}
+      .s{fill:#f7f7f7;stroke:#999;stroke-width:1.2}
+      .b{fill:#ececec;stroke:#666;stroke-width:1.2}
+      .t{font:13px Helvetica,Arial,sans-serif;fill:#222;text-anchor:middle}
+      .h{font-weight:bold}
+      .i{font-style:italic}
+      .m{font-family:Menlo,Consolas,monospace;font-size:11px}
+      .l{font:11px Helvetica,Arial,sans-serif;fill:#333;text-anchor:middle;stroke:#fff;stroke-width:4;paint-order:stroke}
+      .ar{fill:none;stroke:#555;stroke-width:1.2;marker-end:url(#a)}
+    </style>
+  </defs>
+  <rect width="1040" height="520" fill="#fff"/>
+
+  <!-- Users -->
+  <rect class="c" x="20" y="70" width="180" height="240"/>
+  <text class="t" x="110" y="90">Users</text>
+  <rect class="b" x="40" y="100" width="140" height="46"/>
+  <text class="t" x="110" y="128">Platform admin</text>
+  <rect class="b" x="40" y="170" width="140" height="46"/>
+  <text class="t" x="110" y="198">Tenant admin</text>
+  <rect class="b" x="40" y="240" width="140" height="46"/>
+  <text class="t" x="110" y="268">Member</text>
+
+  <!-- Virtual workspace -->
+  <rect class="c" x="290" y="70" width="250" height="240"/>
+  <text class="t" x="415" y="90">Tenancy virtual workspace</text>
+  <text class="t m" x="415" y="106">/services/tenancy</text>
+  <rect class="b" x="310" y="118" width="210" height="176"/>
+  <text class="t h" x="415" y="140">who am I?</text>
+  <text class="t i" x="415" y="156">SelfTenancyReview</text>
+  <text class="t h" x="415" y="180">give me a tenant</text>
+  <text class="t i" x="415" y="196">SelfTenantRequest</text>
+  <text class="t h" x="415" y="220">create a project</text>
+  <text class="t i" x="415" y="236">SelfProjectRequest</text>
+  <text class="t h" x="415" y="260">grant or revoke access</text>
+  <text class="t i" x="415" y="276">memberships</text>
+
+  <!-- Operator -->
+  <rect class="b" x="325" y="400" width="180" height="56"/>
+  <text class="t h" x="415" y="424">Tenancy operator</text>
+  <text class="t i" x="415" y="441">records into workspaces</text>
+
+  <!-- kcp workspaces -->
+  <rect class="c" x="640" y="40" width="380" height="460"/>
+  <text class="t" x="830" y="60">kcp workspaces</text>
+  <rect class="b" x="665" y="80" width="330" height="60"/>
+  <text class="t h" x="830" y="105">root:tenancy:store</text>
+  <text class="t i" x="830" y="123">Tenant records</text>
+
+  <rect class="s" x="665" y="160" width="330" height="320"/>
+  <text class="t h" x="830" y="180">root:tenancy:tenants</text>
+  <rect class="c" x="685" y="195" width="290" height="270"/>
+  <text class="t h" x="830" y="215">acme</text>
+  <text class="t i" x="830" y="231">tenant workspace: Projects, Memberships</text>
+  <rect class="b" x="705" y="248" width="250" height="92"/>
+  <text class="t h" x="830" y="280">web</text>
+  <text class="t i" x="830" y="297">project workspace</text>
+  <text class="t i" x="830" y="314">team RBAC, default namespace</text>
+  <rect class="b" x="705" y="358" width="250" height="92"/>
+  <text class="t h" x="830" y="390">api</text>
+  <text class="t i" x="830" y="407">project workspace</text>
+  <text class="t i" x="830" y="424">team RBAC, default namespace</text>
+
+  <!-- Arrows -->
+  <path class="ar" d="M180 123 H240 V24 H830 V80"/>
+  <text class="l" x="535" y="18">create Tenant</text>
+
+  <path class="ar" d="M180 193 H310"/>
+  <text class="l" x="245" y="186">OIDC token</text>
+
+  <path class="ar" d="M520 128 H665"/>
+  <text class="l" x="592" y="121">Tenants</text>
+
+  <path class="ar" d="M520 223 H685"/>
+  <text class="l" x="590" y="216">writes for you</text>
+
+  <path class="ar" d="M180 263 H250 V330 H620 V294 H705"/>
+  <text class="l" x="435" y="324">kubectl, in their project</text>
+
+  <path class="ar" d="M505 428 H705"/>
+  <text class="l" x="600" y="421">creates workspaces + RBAC</text>
+</svg>
